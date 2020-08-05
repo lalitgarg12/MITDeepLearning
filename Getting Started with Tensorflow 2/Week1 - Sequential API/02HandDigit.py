@@ -23,6 +23,7 @@ def scale_mnist_data(train_images, test_images):
 
 scaled_train_images, scaled_test_images = scale_mnist_data(train_images,test_images)
 
+#Add a dummy channel dimension
 scaled_train_images = scaled_train_images[...,np.newaxis]
 scaled_test_images = scaled_test_images[...,np.newaxis]
 
